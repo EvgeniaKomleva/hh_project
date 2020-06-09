@@ -24,7 +24,7 @@ scrapy runspider script.py -a file=config.ini -L WARNING --output=data/data.json
 
 Вместо area ставить null - all areas, 1 - Moscow, 2- St. Piterburg, 2019 -MO, more areas- https://api.hh.ru/areas
 
-Вместо specialization ставить 1 - IT, 17- продажи, больше обозначений можно найти на https://api.hh.ru/specializations
+Вместо specialization ставить 1 - IT,5 - Банки, инвестиции, лизинг,  17- продажи, больше обозначений можно найти на https://api.hh.ru/specializations
 
 Вместо search period можно выбрать из : 1- соответствует 1 дню ,3,7,30 ,365. Все это количестсво дней за которые хотим посмотреть резюме.
 
