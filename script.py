@@ -19,5 +19,5 @@ class BlogSpider(scrapy.Spider):
                 'last_work_plase': last_work_plase,
             }
 
-        #for next_page in response.css('a.bloko-button'):
-        #    yield response.follow(next_page, self.parse)
+        for next_page in response.css('a.bloko-button'):
+            yield response.follow(next_page, self.parse)
