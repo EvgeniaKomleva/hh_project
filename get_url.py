@@ -3,10 +3,13 @@ import sys
 import os
 from configparser import ConfigParser
 
-file = 'config.ini'
+file = str(sys.argv[3])[5:] #'java.ini'
+file1 = file
+#print(str(sys.argv[3])[5:])
 config = ConfigParser()
 config.read(file)
 
+#scrapy runspider script.py -a file=java.ini -L WARNING --output=data/data.json
 
 def auth(username, password):
     s = requests.session()
@@ -28,7 +31,7 @@ def auth(username, password):
     #print(r.text)
 
 
-#argument_list = str(sys.argv)
+
 area = config['parametrs']['area'] #str(input("Enter area number(null - all areas, 1 - Moscow, 2- St. Piterburg, 2019 -MO, more areas-+ https://api.hh.ru/areas): "))
 specialization = config['parametrs']['specialization'] # str(input("Enter specialization number (1 - IT, 17- sales, more-https://api.hh.ru/specializations): "))
 search_period = config['parametrs']['search_period'] # str(input("Enter search period (1- day,3- 3 days,7,30 - mounth,365): "))

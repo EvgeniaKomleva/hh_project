@@ -1,8 +1,9 @@
 import pandas as pd
 import datetime
 from configparser import ConfigParser
-
-file = 'config.ini'
+import sys
+#print(str(sys.argv[1]))
+file = str(sys.argv[1]) #'java.ini'
 config = ConfigParser()
 config.read(file)
 
