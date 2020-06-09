@@ -19,7 +19,7 @@ scrapy runspider script.py -L WARNING --output=data/data.json && python transfor
 
 ## Как изменить параметры
 
-Зайти в файл  config.ini. В этом файле передаются параметры для формирование url, по которому производиться запрос. По умолчанию ищем резюме джавистов специалистов по Москве, которые появились в последние 30 дней. За параметры отвечают переменные area, specialization, search_period, auth_status, search_text. Можете менять эти параметры: 
+Зайти в файл  config.ini. В этом файле передаются параметры для формирование url, по которому производиться запрос. По умолчанию ищем резюме джавистов по Москве, которые появились в последние 30 дней. За параметры отвечают переменные area, specialization, search_period, auth_status, search_text. Можете менять эти параметры: 
 
 Вместо area ставить null - all areas, 1 - Moscow, 2- St. Piterburg, 2019 -MO, more areas- https://api.hh.ru/areas
 
