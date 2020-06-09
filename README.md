@@ -19,12 +19,15 @@ scrapy runspider script.py -L WARNING --output=data/data.json && python transfor
 
 ## Как изменить параметры
 
-Зайти в файл  get_url. В этом файле происходит формирование url, по которому производиться запрос. По умолчанию ищем резуме IT специалистов по Москве, которые появились в последние 30 дней. За параметры отвечают переменные area, specialization, search_period. Можете менять эти параметры, вместо area ставить null - all areas, 1 - Moscow, 2- St. Piterburg, 2019 -MO, more areas- https://api.hh.ru/areas
+Зайти в файл  get_url. В этом файле происходит формирование url, по которому производиться запрос. По умолчанию ищем резуме IT специалистов по Москве, которые появились в последние 30 дней. За параметры отвечают переменные area, specialization, search_period, auth_status. Можете менять эти параметры, вместо area ставить null - all areas, 1 - Moscow, 2- St. Piterburg, 2019 -MO, more areas- https://api.hh.ru/areas
 
 Вместо specialization ставить 1 - IT, 17- продажи, больше обозначений можно найти на https://api.hh.ru/specializations
 
-Вместо search period (1- day,3- 3 days,7,30 - mounth,365)
+Вместо search period можно выбрать из : 1- соответствует 1 дню ,3,7,30 ,365. Все это количестсво дней за которые хотим посмотреть резюме.
 
+Вместо auth_status можно подставить 1 или 0. По умолчанию стоит 0 (т е заходим без использования аккаунта). Если нужно использовать аккант ставим 1 и вводим свой логин и пароль
+
+Если вдруг захочется поменять какие то другие параметры можно зайти на https://hh.ru/search/resume?area=1&isDefaultArea=true&exp_period=all_time&logic=normal&pos=full_text&from=employer_index_header&text=&fromSearch=true, выставить необходимые параметры, скопировать полученную ссылку в переменную url и запустить программу
 
 ## Как поставить на расписание 
 
