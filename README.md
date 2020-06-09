@@ -12,9 +12,10 @@ pip install -r requirements.txt
 ```
 Запустите скрипты сбора объявлений для сайтов (я предворительно выбрала поиск по Москве и проф. области IT):
 ```
-scrapy runspider script.py -L WARNING --output=data/data.json && python transform_data.py
+scrapy runspider script.py -a file=config.ini -L WARNING --output=data/data.json && python transform_data.py config.ini
 
 ```
+Вы можете заменить config.ini на другой файл(файл с другими значениями, но сходной структурой)
 Результаты парсинга сохранятся в *.json файлы внутри каталога data. При повторном запуске парсер добавит новые данные в конец файла и этим сломает JSON, поэтому старые файлы с данными лучше удалять перед повторным запуском. В каталоге resume появляется файл  {seach_text}{current_day}data_sort.csv, в котором вы найдете все необходимые данные (count- это число человек, ищущих работу из какой-то определенной компании. Список отсортирован по убыванию count)
 
 ## Как изменить параметры
