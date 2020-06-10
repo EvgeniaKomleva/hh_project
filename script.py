@@ -1,5 +1,4 @@
 import scrapy
-import requests
 import get_url
 
 
@@ -16,7 +15,7 @@ class BlogSpider(scrapy.Spider):
             yield {
                 'title': title,
                 'href': href,
-                'last_work_plase': last_work_plase,
+                'last_work_place': last_work_plase,
             }
 
         for next_page in response.css('a.bloko-button'):
