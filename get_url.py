@@ -36,7 +36,7 @@ area = config['parametrs']['area'] #str(input("Enter area number(null - all area
 specialization = config['parametrs']['specialization'] # str(input("Enter specialization number (1 - IT, 17- sales, more-https://api.hh.ru/specializations): "))
 search_period = config['parametrs']['search_period'] # str(input("Enter search period (1- day,3- 3 days,7,30 - mounth,365): "))
 # order_by = str(input("Order by (relevance, publication_time, salary_desc, salary_asc): "))
-search_text = config['parametrs']['search_text']
+search_text = config['parametrs']['search_text'].encode('cp1251').decode('utf-8')
 auth_status = config['parametrs']['auth_status']  # int(input("Do you whant login? (1-yes, null -no): "))
 if (auth_status == 1):
     username = config['account']['username']
@@ -45,3 +45,5 @@ if (auth_status == 1):
 
 url = [
     'https://hh.ru/search/resume?clusters=True&area='+area+'&specialization='+specialization+'&order_by=relevance&search_period='+search_period+'&logic=normal&pos=position%2Cworkplace_position&exp_period=last_year&exp_company_size=any&exp_industry=any&no_magic=False&st=resumeSearch&text='+search_text+'&fromSearch=true']
+
+print(url)
