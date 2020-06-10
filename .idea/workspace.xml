@@ -28,7 +28,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../hh_resume" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager" selected="Python.app">
     <configuration name="Unnamed" type="CompoundRunConfigurationType">
@@ -90,7 +90,7 @@
       <workItem from="1591680090716" duration="1540000" />
       <workItem from="1591721126571" duration="2248000" />
       <workItem from="1591777977828" duration="7710000" />
-      <workItem from="1591787520239" duration="335000" />
+      <workItem from="1591787520239" duration="622000" />
     </task>
     <servers />
   </component>
@@ -134,10 +134,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1591628339255" />
-    <state x="277" y="76" key="SettingsEditor" timestamp="1591634325385">
+    <state x="277" y="76" key="SettingsEditor" timestamp="1591788015248">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="277" y="76" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1591634325385" />
+    <state x="277" y="76" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1591788015248" />
     <state x="704" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1591787523928">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
