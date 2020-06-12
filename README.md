@@ -41,4 +41,12 @@ scrapy runspider script.py -a file=config.ini -L WARNING --output=data/data.json
 
 Больше информации: https://windowsnotes.ru/powershell-2/zapusk-powershell-skripta-po-raspisaniyu/
 
+
+## Как запустить если нет IDE
+
+```
+cd build\exe.win-amd64-3.7
+
+```
+
 https://www.youtube.com/watch?v=n2Cr_YRQk7o
