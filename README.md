@@ -47,6 +47,8 @@ scrapy runspider script.py -a file=config.ini -L WARNING --output=data/data.json
 ```
 cd build\exe.win-amd64-3.7
 
+code_runer.exe
+
 ```
 
 https://www.youtube.com/watch?v=n2Cr_YRQk7o
