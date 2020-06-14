@@ -1,5 +1,4 @@
 from os import system
-import scrapy
 
 
 def execute(cmd):
