@@ -18,6 +18,10 @@ scrapy runspider script.py -a file=config.ini -L WARNING --output=data/data.json
 ```
 ### 2 способ:
 ```
+python code_runer.py
+```
+### 3 способ:
+```
 cd build\exe.win-amd64-3.7
 
 code_runer.exe
