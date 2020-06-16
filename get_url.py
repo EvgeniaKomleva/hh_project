@@ -34,7 +34,9 @@ search_period = config['parametrs']['search_period'] # str(input("Enter search p
 # order_by = str(input("Order by (relevance, publication_time, salary_desc, salary_asc): "))
 search_text = config['parametrs']['search_text'].encode('cp1251').decode('utf-8')
 auth_status = config['parametrs']['auth_status']  # int(input("Do you whant login? (1-yes, null -no): "))
-if (auth_status == 1):
+#print(auth_status)
+if auth_status == '1':
+    #print("auth_exist")
     username = config['account']['username']
     password = config['account']['password']
     auth(username, password)
