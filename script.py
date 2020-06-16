@@ -1,5 +1,6 @@
 import scrapy
 import get_url
+import os
 
 
 class BlogSpider(scrapy.Spider):
@@ -20,3 +21,4 @@ class BlogSpider(scrapy.Spider):
 
         for next_page in response.css('a.bloko-button'):
             yield response.follow(next_page, self.parse)
+

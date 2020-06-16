@@ -1,7 +1,11 @@
 import requests
 import sys
 from configparser import ConfigParser
+import os
 
+if (os.path.exists("data/data.json")):
+    os.remove("data/data.json")
+    #print("Remuve")
 file = str(sys.argv[3])[5:] #'java.ini'
 file1 = file
 config = ConfigParser()
@@ -41,5 +45,6 @@ if auth_status == '1':
     password = config['account']['password']
     auth(username, password)
 
-url = [
-    'https://hh.ru/search/resume?clusters=True&area='+area+'&specialization='+specialization+'&order_by=relevance&search_period='+search_period+'&logic=normal&pos=position%2Cworkplace_position&exp_period=last_year&exp_company_size=any&exp_industry=any&no_magic=False&st=resumeSearch&text='+search_text+'&fromSearch=true']
+
+url = ["https://hh.ru/search/resume?area="+area+"&clusters=true&exp_company_size=any&exp_industry=any&exp_period=last_year&logic=normal&no_magic=false&order_by=relevance&pos=position%2Cworkplace_position&text="+search_text+"&specialization="+specialization+"&search_period="+search_period]
+#print(url)
