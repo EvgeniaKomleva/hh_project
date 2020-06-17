@@ -44,7 +44,10 @@ if auth_status == '1':
     username = config['account']['username']
     password = config['account']['password']
     auth(username, password)
+#url =["https://hh.ru/search/resume?clusters=True&area=1&order_by=relevance&search_period=30&logic=normal&pos=full_text&exp_period=all_time&no_magic=False&st=resumeSearch&text=Solution+architect&fromSearch=true"]
+#url = ["https://hh.ru/search/resume?area="+area+"&clusters=true&exp_company_size=any&exp_industry=any&exp_period=all_time&logic=normal&no_magic=False&order_by=relevance&pos=full_text%2Cworkplace_position&text="+search_text+"&specialization="+specialization+"&search_period="+search_period]
+#print(url, url1)
+#url1 = ["https://hh.ru/search/resume?area="+area+"&clusters=true&exp_company_size=any&exp_industry=any&exp_period=all_time&logic=normal&no_magic=False&order_by=relevance&search_period="+search_period+"&pos=full_text%2Cworkplace_position&text="+search_text+"&specialization="+specialization]
+url = ["https://hh.ru/search/resume?area="+area+"&clusters=true&exp_company_size=any&exp_industry=any&exp_period=all_time&logic=normal&no_magic=False&order_by=relevance&pos=full_text%2Cworkplace_position&text="+search_text+"&specialization="+specialization+"&search_period="+search_period]
 
-
-url = ["https://hh.ru/search/resume?area="+area+"&clusters=true&exp_company_size=any&exp_industry=any&exp_period=last_year&logic=normal&no_magic=false&order_by=relevance&pos=position%2Cworkplace_position&text="+search_text+"&specialization="+specialization+"&search_period="+search_period]
-#print(url)
+print(url)
