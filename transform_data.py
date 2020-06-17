@@ -2,6 +2,7 @@ import pandas as pd
 import datetime
 from configparser import ConfigParser
 import sys
+import numpy as np
 import os
 
 file = str(sys.argv[1]) #'java.ini'
@@ -41,6 +42,7 @@ sorted_data.drop(["фриланс"], inplace = True, errors='ignore')
 sorted_data.reset_index(inplace=True)
 sorted_data = sorted_data.fillna(0)
 sorted_data["count"]  = sorted_data["count"].astype(int)
+sorted_data["href"] =sorted_data["href"].astype(str).str[:-85].astype(np.str)
 sorted_data.to_csv('resume/{}_{}_data_sort_{}.csv'.format(file_name, current_day, auth), sep=';', index=False,encoding='utf-8-sig')
 os.remove("data/data.json")
 #print(auth)
